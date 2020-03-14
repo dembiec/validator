@@ -1,6 +1,7 @@
 <?php
 namespace Validator;
+use Validator\Provider;
 
-class Validator
+class Validator extends Provider
 {
 }
