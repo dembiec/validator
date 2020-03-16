@@ -3,7 +3,9 @@ namespace Validator\Helpers;
 
 class Classes
 {
-    private static $map = [];
+    private static $map = [
+        'Types' => ['array', 'bool', 'double', 'float', 'int', 'long', 'object', 'string']
+    ];
 
     public static function namespace(string $method = NULL)
     {
