@@ -7,6 +7,7 @@ class Validator extends Provider
 {
     public function __call(string $method = NULL, array $arguments = NULL)
     {
-        return call_user_func_array([C::namespace($method), $method], $arguments);
+        call_user_func_array([C::namespace($method), $method], $arguments);
+        return $this;
     }
 }
