@@ -15,4 +15,9 @@ class Validator extends Provider
     {
         return empty(self::$validationResult);
     }
+
+    public function showErrors() : array
+    {
+        return self::$validationResult;
+    }
 }
