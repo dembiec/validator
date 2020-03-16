@@ -10,4 +10,9 @@ class Validator extends Provider
         call_user_func_array([C::namespace($method), $method], $arguments);
         return $this;
     }
+
+    public function existErrors() : bool
+    {
+        return empty(self::$validationResult);
+    }
 }
