@@ -1,0 +1,10 @@
+{
+    "array":"The value must be an array.", 
+    "bool":"The value must be of type bool.",
+    "double":"The value must be of type double.",
+    "float":"The value must be of type float.",
+    "int":"The value must be of type int.",
+    "long":"The value must be of type long.",
+    "object":"The value must be an object.",
+    "string":"The value must be of type string."
+}
