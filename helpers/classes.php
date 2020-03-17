@@ -4,6 +4,7 @@ namespace Validator\Helpers;
 class Classes
 {
     private static $map = [
+        'Requirements' => ['checked', 'confirm', 'require'],
         'Types' => ['array', 'bool', 'double', 'float', 'int', 'long', 'object', 'string']
     ];
 
