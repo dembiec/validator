@@ -2,6 +2,7 @@
 namespace Validator;
 use Validator\Provider;
 use Validator\Helpers\Classes as C;
+use Validator\Helpers\Json as J;
 
 class Validator extends Provider
 {
@@ -19,5 +20,16 @@ class Validator extends Provider
     public function showErrors() : array
     {
         return self::$validationResult;
+    }
+
+    public function errorMessages() : array
+    {
+        foreach (self::$validationResult as $arrayKey => $errorArray) {
+            foreach ($errorArray as $error) {
+                $messageFile = J::decode(C::class($error));
+                $messages[$arrayKey][] = $messageFile[$error];
+            }
+        }
+        return $messages;
     }
 }
