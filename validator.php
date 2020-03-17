@@ -24,11 +24,15 @@ class Validator extends Provider
 
     public function errorMessages() : array
     {
-        foreach (self::$validationResult as $arrayKey => $errorArray) {
-            foreach ($errorArray as $error) {
-                $messageFile = J::decode(C::class($error));
-                $messages[$arrayKey][] = $messageFile[$error];
+        if (!$this->existErrors()) {
+            foreach (self::$validationResult as $arrayKey => $errorArray) {
+                foreach ($errorArray as $error) {
+                    $messageFile = J::decode(C::class($error));
+                    $messages[$arrayKey][] = $messageFile[$error];
+                }
             }
+        } else {
+            $messages = [];
         }
         return $messages;
     }
