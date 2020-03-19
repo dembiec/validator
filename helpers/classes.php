@@ -4,6 +4,7 @@ namespace Validator\Helpers;
 class Classes
 {
     private static $map = [
+        'Files' => ['dir', 'extension', 'file', 'maxSize', 'minSize', 'size'],
         'Requirements' => ['checked', 'confirm', 'require'],
         'Types' => ['array', 'bool', 'double', 'float', 'int', 'long', 'object', 'string']
     ];
