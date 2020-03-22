@@ -14,7 +14,7 @@ class Validator extends Provider
 
     public function existErrors() : bool
     {
-        return empty(self::$validationResult);
+        return empty(self::$validationResult) ? FALSE : TRUE;
     }
 
     public function showErrors() : array
