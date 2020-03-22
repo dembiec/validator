@@ -6,6 +6,7 @@ class Classes
     private static $map = [
         'Characters' => ['isChar', 'lenChar', 'maxChar', 'minChar'],
         'Files' => ['dir', 'extension', 'file', 'maxSize', 'minSize', 'size'],
+        'Formats' => ['email', 'ip', 'url'],
         'Requirements' => ['checked', 'confirm', 'require'],
         'Types' => ['array', 'bool', 'double', 'float', 'int', 'long', 'object', 'string']
     ];
