@@ -1,0 +1,5 @@
+{
+    "email":"The value provided is not an email address.", 
+    "ip":"The value provided is not an ip address.",
+    "url":"The value provided is not an url."
+}
