@@ -1,0 +1,6 @@
+{
+    "isChar":"The value does not contain the required characters or character.", 
+    "lenChar":"The value does not have the required number of characters.",
+    "maxChar":"The value exceeds the maximum number of characters allowed.",
+    "minChar":"The value does not have the required minimum number of characters."
+}

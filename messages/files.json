@@ -1,0 +1,8 @@
+{
+    "dir":"The value is not a folder.", 
+    "extension":"The value provided does not have the allowed file extension.",
+    "file":"The value is not a file.",
+    "maxSize":"The value provided exceeds the maximum file size.",
+    "minSize":"The value provided does not exceed the minimum file size.",
+    "size":"The value provided does not have an allowed file size."
+}
